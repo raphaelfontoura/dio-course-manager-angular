@@ -14,13 +14,11 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     HttpClientModule,
+    RouterModule.forRoot([
+      
+    ]),
     CourseModule,
     CoreModule,
-    RouterModule.forRoot([
-      {
-        path: '', redirectTo: 'courses', pathMatch: 'full'
-      },
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
